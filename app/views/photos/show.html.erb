@@ -1,12 +1,30 @@
-<h1>Details</h1>
+<div class="container">
+      <div class="col-md-6">
 
-<img src = "<%= @my_photo.source %>">
+        <h1>Photo Details</h1>
 
 <p>
 <%= @my_photo.caption %>
 </p>
 
-<a href ="http://localhost:3000/photos/">Back</a>
-<a href ="http://localhost:3000/photos/">Back</a>
+<img src="<%= @my_photo.source %>">
 
-#not complete
+<p>
+
+</p>
+
+<a href="/photos" class="btn btn-default">
+  Go back
+</a>
+
+<a href="/photos/<%= @my_photo.id%>/edit" class="btn btn-default">
+  Edit
+</a>
+
+<a href="/delete_photo/<%= @my_photo.id%>" class="btn btn-default">
+  Delete
+</a>
+
+
+      </div>
+    </div>
