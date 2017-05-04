@@ -12,8 +12,8 @@ def new_form
 end
 
 def create_row
-  url= params[:da_source]
-  cap= params[:da_caption]
+  url= params[:image_url]
+  cap= params[:caption]
   new_photo=Photo.new
   new_photo.source = url
   new_photo.caption = cap
